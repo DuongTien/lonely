@@ -2,23 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lonely - Free bootstrap 3 one page template</title>
+    <title>Lonely</title>
 
-    <!-- CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/nivo-lightbox.css" rel="stylesheet" />
-    <link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
-    <link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
-    <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
-    <link href="css/animate.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet">
-    <link href="color/default.css" rel="stylesheet">
+
+    <?php $this->Html->charset()?>
+
+    <?php
+    echo $this->fetch('meta');
+    echo $this->fetch('css');
+    echo $this->fetch('script');
+
+    echo $this->Html->css('../frontend/css/bootstrap.min.css');
+    echo $this->Html->css('../frontend/font-awesome/css/font-awesome.min.css');
+    echo $this->Html->css('../frontend/css/nivo-lightbox.css');
+    echo $this->Html->css('../frontend/css/nivo-lightbox-theme/default/default.css');
+    echo $this->Html->css('../frontend/css/owl.carousel.css');
+    echo $this->Html->css('../frontend/css/owl.theme.css');
+    echo $this->Html->css('../frontend/css/animate.css');
+    echo $this->Html->css('../frontend/css/style.css');
+    echo $this->Html->css('../frontend/color/default.css');
+
+
+    echo $this->Html->script('../frontend/js/jquery.min.js');
+    echo $this->Html->script('../frontend/js/bootstrap.min.js');
+    echo $this->Html->script('../frontend/js/jquery.easing.min.js');
+    echo $this->Html->script('../frontend/js/jquery.sticky.js');
+    echo $this->Html->script('../frontend/js/jquery.scrollTo.js');
+    echo $this->Html->script('../frontend/js/stellar.js');
+    echo $this->Html->script('../frontend/js/wow.min.js');
+    echo $this->Html->script('../frontend/js/owl.carousel.min.js');
+    echo $this->Html->script('../frontend/js/nivo-lightbox.min.js');
+    echo $this->Html->script('../frontend/js/custom.js');
+
+    ?>
 
 </head>
 
@@ -32,7 +52,7 @@
 <section id="intro" class="intro">
 
     <div class="slogan">
-        <a href="index.html"><img src="img/logo.png" alt="" /></a>
+        <a href="index.html"><?php echo $this->Html->image('../frontend/img/logo.png')?></a>
     </div>
     <div class="page-scroll">
         <a href="#about">
@@ -94,8 +114,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-
-                <img src="img/img1.jpg" class="img-responsive img-rounded" alt="" />
+                <?php echo $this->Html->image('../frontend/img/img1.jpg',array('class' => 'img-responsive img-rounded'))?>
             </div>
             <div class="col-md-6">
                 <p><strong>You'll fall in love with me at the first sight</strong></p>
@@ -179,8 +198,13 @@
             <div class="col-sm-12 col-md-12 col-lg-12" >
                 <div class="wow bounceInUp" data-wow-delay="0.4s">
                     <div id="owl-works" class="owl-carousel">
-                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/1.jpg" class="img-responsive" alt="img"></a></div>
-                        <div class="item"><a href="img/gallery/2.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/2.jpg" class="img-responsive " alt="img"></a></div>
+<!--                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1">--><?php //echo $this->Html->image('../frontend/img/gallery/1.jpg',array('class' => 'img-responsive', 'alt'=>'img'))?><!--</a></div>-->
+<!--                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1">--><?php //echo $this->Html->image('../frontend/img/gallery/1.jpg',array('class' => 'img-responsive'))?><!--</a></div>-->
+<!--                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1">--><?php //echo $this->Html->image('../frontend/img/gallery/1.jpg',array('class' => 'img-responsive'))?><!--</a></div>-->
+<!--                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1">--><?php //echo $this->Html->image('../frontend/img/gallery/1.jpg',array('class' => 'img-responsive'))?><!--</a></div>-->
+<!--                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1">--><?php //echo $this->Html->image('../frontend/img/gallery/1.jpg',array('class' => 'img-responsive'))?><!--</a></div>-->
+<!--                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1">--><?php //echo $this->Html->image('../frontend/img/gallery/1.jpg',array('class' => 'img-responsive'))?><!--</a></div>-->
+
                         <div class="item"><a href="img/gallery/3.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/3.jpg" class="img-responsive " alt="img"></a></div>
                         <div class="item"><a href="img/gallery/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/4.jpg" class="img-responsive " alt="img"></a></div>
                         <div class="item"><a href="img/gallery/5.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/5.jpg" class="img-responsive " alt="img"></a></div>
@@ -283,17 +307,7 @@
 </footer>
 
 <!-- Core JavaScript Files -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.sticky.js"></script>
-<script src="js/jquery.scrollTo.js"></script>
-<script src="js/stellar.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/nivo-lightbox.min.js"></script>
-<!-- Custom Theme JavaScript -->
-<script src="js/custom.js"></script>
+
 
 </body>
 
