@@ -2,312 +2,310 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lonely</title>
-
-
-    <?php $this->Html->charset()?>
+    <title>Lonely - Free bootstrap 3 one page template</title>
 
     <?php
-    echo $this->fetch('meta');
-    echo $this->fetch('css');
-    echo $this->fetch('script');
+        echo $this->fetch('meta');
+        echo $this->fetch('css');
+        echo $this->fetch('script');
+    ?>
 
-    echo $this->Html->css('../frontend/css/bootstrap.min.css');
-    echo $this->Html->css('../frontend/font-awesome/css/font-awesome.min.css');
-    echo $this->Html->css('../frontend/css/nivo-lightbox.css');
-    echo $this->Html->css('../frontend/css/nivo-lightbox-theme/default/default.css');
-    echo $this->Html->css('../frontend/css/owl.carousel.css');
-    echo $this->Html->css('../frontend/css/owl.theme.css');
-    echo $this->Html->css('../frontend/css/animate.css');
-    echo $this->Html->css('../frontend/css/style.css');
-    echo $this->Html->css('../frontend/color/default.css');
-
-
-    echo $this->Html->script('../frontend/js/jquery.min.js');
-    echo $this->Html->script('../frontend/js/bootstrap.min.js');
-    echo $this->Html->script('../frontend/js/jquery.easing.min.js');
-    echo $this->Html->script('../frontend/js/jquery.sticky.js');
-    echo $this->Html->script('../frontend/js/jquery.scrollTo.js');
-    echo $this->Html->script('../frontend/js/stellar.js');
-    echo $this->Html->script('../frontend/js/wow.min.js');
-    echo $this->Html->script('../frontend/js/owl.carousel.min.js');
-    echo $this->Html->script('../frontend/js/nivo-lightbox.min.js');
-    echo $this->Html->script('../frontend/js/custom.js');
-
+    <?php
+        echo $this->Html->css(array(
+            '../frontend/css/bootstrap.min.css',
+            '../frontend/font-awesome/css/font-awesome.min.css',
+            '../frontend/css/nivo-lightbox.css',
+            '../frontend/css/nivo-lightbox-theme/default/default.css',
+            '../frontend/css/owl.carousel.css',
+            '../frontend/css/owl.theme.css',
+            '../frontend/css/animate.css',
+            '../frontend/css/style.css',
+            '../frontend/color/default.css'
+        ));
     ?>
 
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-<!-- Preloader -->
-<div id="preloader">
-    <div id="load"></div>
-</div>
+	<!-- Preloader -->
+	<div id="preloader">
+	  <div id="load"></div>
+	</div>
 
-<!-- Section: intro -->
-<section id="intro" class="intro">
+	<!-- Section: intro -->
+    <section id="intro" class="intro">
+	
+		<div class="slogan">
+			<a href="index.html"><?php echo $this->Html->image('../frontend/img/logo.png')?></a>
+		</div>
+		<div class="page-scroll">
+			<a href="#about">
+				<i class="fa fa-angle-down fa-5x animated"></i>
+			</a>
+		</div>
+    </section>
+	<!-- /Section: intro -->
+	
+    <!-- Navigation -->
+    <div id="navigation">
+        <nav class="navbar navbar-custom" role="navigation">
+                              <div class="container">
+                                    <div class="row">
+                                          <div class="col-md-12">
+                         
+                                          <!-- Brand and toggle get grouped for better mobile display -->
+                                          <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                                                <i class="fa fa-bars"></i>
+                                                </button>
+                                          </div>
+                                                      <!-- Collect the nav links, forms, and other content for toggling -->
+                                                      <div class="collapse navbar-collapse" id="menu">
+                                                            <ul class="nav navbar-nav">
+                                                                  <li class="active"><a href="#intro">Home</a></li>
+                                                                  <li><a href="#about">About Me</a></li>
+														          <li><a href="#gallery">My gallery</a></li>                                                                                                             
+                                                                  <li><a href="#contact">Talk to me</a></li>
+                                                            </ul>
+                                                      </div>
+                                                      <!-- /.Navbar-collapse -->
+                             
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- /.container -->
+                        </nav>
+    </div> 
+    <!-- /Navigation -->  
 
-    <div class="slogan">
-        <a href="index.html"><?php echo $this->Html->image('../frontend/img/logo.png')?></a>
-    </div>
-    <div class="page-scroll">
-        <a href="#about">
-            <i class="fa fa-angle-down fa-5x animated"></i>
-        </a>
-    </div>
-</section>
-<!-- /Section: intro -->
+	<!-- Section: about -->
+    <section id="about" class="home-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					
+						<div class="section-heading text-center">
+						<div class="wow bounceInDown" data-wow-delay="0.2s">
+							<h2>My name is Alice</h2>
+						</div>
+						<p class="wow bounceInUp" data-wow-delay="0.3s">I'm 28 years old from a village near Alpen mountain and I'm a spinster :(</p>
+						</div>
+					
+				</div>
+			</div>
+		</div>
 
-<!-- Navigation -->
-<div id="navigation">
-    <nav class="navbar navbar-custom" role="navigation">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+				
+					<?php echo $this->Html->image('../frontend/img/img1.jpg',array('class' => 'img-responsive img-rounded'))?>
+				</div>		
+				<div class="col-md-6">
+					<p><strong>You'll fall in love with me at the first sight</strong></p>
+					<p>
+					Lorem ipsum dolor sit amet, ei purto tamquam ceteros his, eos in graece posidonium. 
+					Ex nullam vidisse salutatus sed, ea persius phaedrum tincidunt vel. Option virtute nonumes ne est. 
+					Id homero expetendis eam, dictas rationibus ut has.
+					</p>
+					<blockquote>
+					Pri pertinacia elaboraret te, an eirmod delicatissimi nec. Eu liber quodsi maiorum mei. 
+					Civibus perfecto rationibus id his, est noster nostrud aliquando at.
+					</blockquote>
+					<a href="#gallery" class="btn btn-skin btn-lg btn-scroll">See my photos</a>
+				</div>
+			</div>		
+		</div>
+	</section>
+	<!-- /Section: about -->
+	
+	<!-- Section: separator -->
+    <section id="separator" class="home-section parallax text-center" data-stellar-background-ratio="0.5">
+		
+		<div class="container">
+			<div class="row">
+					<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="align-center txt-shadow">
+							<div class="icon">
+								<i class="fa fa-graduation-cap fa-5x"></i>
+							</div>
+						<span class="color-white">Bachelor of Design</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="align-center txt-shadow">
+							<div class="icon">
+								<i class="fa fa-heart fa-5x"></i>
+							</div>
+						<span class="color-white">10x failed in love</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="align-center txt-shadow">
+							<div class="icon">
+								<i class="fa fa-plane fa-5x"></i>
+							</div>
+						<span class="color-white">I love traveling</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="align-center txt-shadow">
+							<div class="icon">
+								<i class="fa fa-camera fa-5x"></i>
+							</div>
+						<span class="color-white">I'm photographer</span>
+						</div>
+					</div>
+			</div>		
+		</div>
+	</section>
+	<!-- /Section: separator -->
+	
+	
+	<!-- Section: gallery -->
+    <section id="gallery" class="home-section text-center bg-gray">
 
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="menu">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#intro">Home</a></li>
-                            <li><a href="#about">About Me</a></li>
-                            <li><a href="#gallery">My gallery</a></li>
-                            <li><a href="#contact">Talk to me</a></li>
-                        </ul>
-                    </div>
-                    <!-- /.Navbar-collapse -->
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading">
+						<h2>My photo gallery</h2>
+						<p>Take a look at my personal moment, enjoy</p>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
 
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->
-    </nav>
-</div>
-<!-- /Navigation -->
-
-<!-- Section: about -->
-<section id="about" class="home-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-
-                <div class="section-heading text-center">
-                    <div class="wow bounceInDown" data-wow-delay="0.2s">
-                        <h2>My name is Alice</h2>
-                    </div>
-                    <p class="wow bounceInUp" data-wow-delay="0.3s">I'm 28 years old from a village near Alpen mountain and I'm a spinster :(</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <?php echo $this->Html->image('../frontend/img/img1.jpg',array('class' => 'img-responsive img-rounded'))?>
-            </div>
-            <div class="col-md-6">
-                <p><strong>You'll fall in love with me at the first sight</strong></p>
-                <p>
-                    Lorem ipsum dolor sit amet, ei purto tamquam ceteros his, eos in graece posidonium.
-                    Ex nullam vidisse salutatus sed, ea persius phaedrum tincidunt vel. Option virtute nonumes ne est.
-                    Id homero expetendis eam, dictas rationibus ut has.
-                </p>
-                <blockquote>
-                    Pri pertinacia elaboraret te, an eirmod delicatissimi nec. Eu liber quodsi maiorum mei.
-                    Civibus perfecto rationibus id his, est noster nostrud aliquando at.
-                </blockquote>
-                <a href="#gallery" class="btn btn-skin btn-lg btn-scroll">See my photos</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- /Section: about -->
-
-<!-- Section: separator -->
-<section id="separator" class="home-section parallax text-center" data-stellar-background-ratio="0.5">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-6 col-sm-3 col-md-3">
-                <div class="align-center txt-shadow">
-                    <div class="icon">
-                        <i class="fa fa-graduation-cap fa-5x"></i>
-                    </div>
-                    <span class="color-white">Bachelor of Design</span>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-3 col-md-3">
-                <div class="align-center txt-shadow">
-                    <div class="icon">
-                        <i class="fa fa-heart fa-5x"></i>
-                    </div>
-                    <span class="color-white">10x failed in love</span>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-3 col-md-3">
-                <div class="align-center txt-shadow">
-                    <div class="icon">
-                        <i class="fa fa-plane fa-5x"></i>
-                    </div>
-                    <span class="color-white">I love traveling</span>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-3 col-md-3">
-                <div class="align-center txt-shadow">
-                    <div class="icon">
-                        <i class="fa fa-camera fa-5x"></i>
-                    </div>
-                    <span class="color-white">I'm photographer</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- /Section: separator -->
-
-
-<!-- Section: gallery -->
-<section id="gallery" class="home-section text-center bg-gray">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <div class="wow bounceInDown" data-wow-delay="0.4s">
-                    <div class="section-heading">
-                        <h2>My photo gallery</h2>
-                        <p>Take a look at my personal moment, enjoy</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12" >
-                <div class="wow bounceInUp" data-wow-delay="0.4s">
+		<div class="container">
+			<div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12" >
+					<div class="wow bounceInUp" data-wow-delay="0.4s">
                     <div id="owl-works" class="owl-carousel">
-<!--                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1">--><?php //echo $this->Html->image('../frontend/img/gallery/1.jpg',array('class' => 'img-responsive', 'alt'=>'img'))?><!--</a></div>-->
-<!--                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1">--><?php //echo $this->Html->image('../frontend/img/gallery/1.jpg',array('class' => 'img-responsive'))?><!--</a></div>-->
-<!--                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1">--><?php //echo $this->Html->image('../frontend/img/gallery/1.jpg',array('class' => 'img-responsive'))?><!--</a></div>-->
-<!--                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1">--><?php //echo $this->Html->image('../frontend/img/gallery/1.jpg',array('class' => 'img-responsive'))?><!--</a></div>-->
-<!--                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1">--><?php //echo $this->Html->image('../frontend/img/gallery/1.jpg',array('class' => 'img-responsive'))?><!--</a></div>-->
-<!--                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1">--><?php //echo $this->Html->image('../frontend/img/gallery/1.jpg',array('class' => 'img-responsive'))?><!--</a></div>-->
 
-                        <div class="item"><a href="img/gallery/3.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/3.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="img/gallery/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/4.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="img/gallery/5.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/5.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="img/gallery/6.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/6.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="img/gallery/7.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/7.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="img/gallery/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/8.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><?php echo $this->Html->image('../frontend/img/gallery/1.jpg',array('class' => 'img-responsive'))?></a></div>
+                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><?php echo $this->Html->image('../frontend/img/gallery/2.jpg',array('class' => 'img-responsive'))?></a></div>
+                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><?php echo $this->Html->image('../frontend/img/gallery/3.jpg',array('class' => 'img-responsive'))?></a></div>
+                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><?php echo $this->Html->image('../frontend/img/gallery/4.jpg',array('class' => 'img-responsive'))?></a></div>
+                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><?php echo $this->Html->image('../frontend/img/gallery/5.jpg',array('class' => 'img-responsive'))?></a></div>
+                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><?php echo $this->Html->image('../frontend/img/gallery/6.jpg',array('class' => 'img-responsive'))?></a></div>
+                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><?php echo $this->Html->image('../frontend/img/gallery/7.jpg',array('class' => 'img-responsive'))?></a></div>
                     </div>
+					</div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- /Section: services -->
+		</div>
+	</section>
+	<!-- /Section: services -->
+	
 
+	
 
+	<!-- Section: contact -->
+    <section id="contact" class="home-section text-center">
+		<div class="heading-contact">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-offset-2">
+					
+					<div class="section-heading">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<h2>Email or phone are welcome</h2>
+					</div>
+					<p class="wow lightSpeedIn" data-wow-delay="0.3s">Gentleman, introduce your self and get in touch with me privately</p>
+					</div>
+					
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
 
-
-<!-- Section: contact -->
-<section id="contact" class="home-section text-center">
-    <div class="heading-contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-offset-2">
-
-                    <div class="section-heading">
-                        <div class="wow bounceInDown" data-wow-delay="0.4s">
-                            <h2>Email or phone are welcome</h2>
+    <div class="row">
+        <div class="col-lg-8 col-md-offset-2">
+            <div class="form-wrapper marginbot-50">
+                <form id="contact-form">
+                <div class="row">
+    
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
                         </div>
-                        <p class="wow lightSpeedIn" data-wow-delay="0.3s">Gentleman, introduce your self and get in touch with me privately</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-8 col-md-offset-2">
-                <div class="form-wrapper marginbot-50">
-                    <form id="contact-form">
-                        <div class="row">
-
-                            <div class="form-group">
-                                <label for="name">
-                                    Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
-                            </div>
-                            <div class="form-group">
-                                <label for="email">
-                                    Email Address</label>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
                                 <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">
-                                    Subject</label>
-                                <select id="subject" name="subject" class="form-control" required="required">
-                                    <option value="na" selected="">Choose One:</option>
-                                    <option value="service">Friendship request</option>
-                                    <option value="suggestions">Wanna marry you</option>
-                                    <option value="product">Prom night invitation</option>
-                                </select>
-                            </div>
-
-
-                            <div class="form-group">
-                                <label for="name">
-                                    Message</label>
-                                <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-                                          placeholder="Message"></textarea>
-                            </div>
-
-
-                            <button type="submit" class="btn btn-skin btn-block" id="btnContactUs">
-                                Send Message</button>
-
                         </div>
-                    </form>
-
+                        <div class="form-group">
+                            <label for="subject">
+                                Subject</label>
+                            <select id="subject" name="subject" class="form-control" required="required">
+                                <option value="na" selected="">Choose One:</option>
+                                <option value="service">Friendship request</option>
+                                <option value="suggestions">Wanna marry you</option>
+                                <option value="product">Prom night invitation</option>
+                            </select>
+                        </div>
+          
+             
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Message"></textarea>
+                        </div>
+       
+           
+                        <button type="submit" class="btn btn-skin btn-block" id="btnContactUs">
+                            Send Message</button>
+       
                 </div>
-                <div class="text-center">
-                    <p class="lead"><i class="fa fa-phone"></i> Call me +1 888 9796 88</p>
-                </div>
+                </form>
+				
             </div>
-
+			<div class="text-center">
+					<p class="lead"><i class="fa fa-phone"></i> Call me +1 888 9796 88</p>
+			</div>
         </div>
 
-    </div>
-</section>
-<!-- /Section: contact -->
+    </div>	
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-lg-12">
-                <p>&copy;Copyright 2014 . Alice Lonely . design by <a href="">Bootstraptaste</a></p>
-            </div>
-        </div>
-    </div>
-</footer>
+		</div>
+	</section>
+	<!-- /Section: contact -->
 
-<!-- Core JavaScript Files -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<p>&copy;Copyright 2014 . Alice Lonely . design by <a href="">Bootstraptaste</a></p>
+				</div>
+			</div>	
+		</div>
+	</footer>
 
+    <!-- Core JavaScript Files -->
+    <?php
+        echo $this->Html->script(array(
+            '../frontend/js/jquery.min.js',
+            '../frontend/js/bootstrap.min.js',
+            '../frontend/js/jquery.easing.min.js',
+            '../frontend/js/jquery.sticky.js',
+            '../frontend/js/jquery.scrollTo.js',
+            '../frontend/js/stellar.js',
+            '../frontend/js/wow.min.js',
+            '../frontend/js/owl.carousel.min.js',
+            '../frontend/js/nivo-lightbox.min.js',
+            '../frontend/js/custom.js'
+        ));
+    ?>
 
 </body>
 

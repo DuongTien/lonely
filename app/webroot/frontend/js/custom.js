@@ -37,7 +37,7 @@
             itemsDesktopSmall : [980,5],
             itemsTablet: [768,5],
             itemsTabletSmall: [550,2],
-            itemsMobile : [480,2],
+            itemsMobile : [480,2]
         });
 	
 	//nivo lightbox
