@@ -35,6 +35,11 @@ class AppController extends Controller {
     public function beforeFilter() {
         parent::beforeFilter();
 
-        $this->layout = 'frontend';
+        if(strpos($this->action, 'admin_') !== false) {
+            $this->layout = 'admin';
+        }
+        else {
+            $this->layout = 'frontend';
+        }
     }
 }
