@@ -14,7 +14,7 @@
 
             </td>
             <td>
-                <input type="image" src="images/shared/top_search_btn.gif"  />
+                <?php echo $this->Form->submit('../admin/images/shared/top_search_btn.gif'); ?>
             </td>
         </tr>
     </table>
